@@ -37,3 +37,74 @@ body {
   justify-content: center;
   padding: 30px 16px;
 }
+
+header,
+main {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  position: relative;
+  margin-bottom: 28px;
+}
+
+h1 {
+  font-family: 'Bangers', cursive;
+  font-size: clamp(2.4rem, 7vw, 3.4rem);
+  letter-spacing: 2px;
+  color: var(--red);
+  margin: 0;
+  transform: rotate(-2deg);
+  -webkit-text-stroke: 2.5px var(--ink);
+  paint-order: stroke fill;
+  text-shadow: var(--shadow-offset) var(--shadow-offset) 0
+    rgba(36, 26, 18, 0.25);
+}
+
+.between {
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--ink);
+  opacity: 0.75;
+  margin: 4px 0 18px;
+}
+
+.btn {
+  font-family: 'Bangers', cursive;
+  font-size: 1.15rem;
+  letter-spacing: 1px;
+  color: var(--cream);
+  background: var(--teal);
+  border: var(--outline) solid var(--ink);
+  border-radius: 50px;
+  padding: 10px 26px;
+  cursor: pointer;
+  box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--ink);
+  transition:
+    transform 0.08s ease,
+    box-shadow 0.08s ease;
+}
+
+.btn:hover {
+  filter: brightness(1.08);
+  rotate: -2deg;
+}
+
+.btn:active {
+  transform: translate(3px, 3px);
+  box-shadow: 2px 2px 0 var(--ink);
+}
+
+.btn.again {
+  background: var(--red);
+}
+
+.btn.check {
+  background: var(--mustard);
+  color: var(--ink);
+}
