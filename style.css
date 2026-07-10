@@ -108,3 +108,33 @@ h1 {
   background: var(--mustard);
   color: var(--ink);
 }
+.number {
+  font-family: 'Bangers', cursive;
+  font-size: 3.2rem;
+  color: var(--cream);
+  background: radial-gradient(
+    circle at 35% 30%,
+    var(--teal),
+    var(--teal-dark) 75%
+  );
+  width: 110px;
+  height: 110px;
+  line-height: 110px;
+  text-align: center;
+  margin: 22px auto 0;
+  border-radius: 50%;
+  border: var(--outline) solid var(--ink);
+  outline: 3px dashed var(--cream);
+  outline-offset: -10px;
+  animation: wobble 3.5s ease-in-out infinite;
+}
+
+@keyframes wobble {
+  0%,
+  100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
