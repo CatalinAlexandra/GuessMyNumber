@@ -173,3 +173,59 @@ main {
     padding-bottom: 20px;
   }
 }
+
+.guess {
+  font-family: 'Bangers', cursive;
+  font-size: 1.6rem;
+  text-align: center;
+  color: var(--ink);
+  width: 110px;
+  padding: 8px 4px;
+  background: #fffaf0;
+  border: var(--outline) solid var(--ink);
+  border-radius: 10px;
+  box-shadow: inset 3px 3px 0 rgba(36, 26, 18, 0.12);
+}
+
+.guess:focus {
+  outline: 3px solid var(--pink);
+  outline-offset: 2px;
+}
+
+.message {
+  font-weight: 800;
+  font-size: 1.05rem;
+  text-align: center;
+  background: var(--pink);
+  color: var(--cream);
+  border: 2px solid var(--ink);
+  border-radius: 10px;
+  padding: 8px 14px;
+  margin: 0;
+  min-height: 1.4em;
+  transform: rotate(-1deg);
+}
+
+.label-score,
+.label-highscore {
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  margin: 0;
+  color: var(--ink);
+  opacity: 0.85;
+}
+
+.score,
+.highscore {
+  font-family: 'Bangers', cursive;
+  font-size: 1.3rem;
+  color: var(--red-dark);
+}
+
+.highscore {
+  color: var(--mustard);
+  -webkit-text-stroke: 1px var(--ink);
+  paint-order: stroke fill;
+}

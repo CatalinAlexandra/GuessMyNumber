@@ -18,11 +18,16 @@ document.querySelector('.check').addEventListener('click', function () {
   else if (guess === secretNumber) {
     document.querySelector('.message').textContent = 'Correct number!';
     document.querySelector('.number').textContent = secretNumber;
-
+    document.querySelector('.check').classList.add('win');
     if (score > highscore) {
       highscore = score;
       document.querySelector('.highscore').textContent = highscore;
     }
+    confetti({
+      particleCount: 180,
+      spread: 120,
+      origin: { y: 0.6 },
+    });
   }
 
   // When guess is too high
