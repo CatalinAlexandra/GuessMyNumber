@@ -3,6 +3,10 @@
 A simple number guessing game built with HTML, CSS and Javascript.
 The player has to guess a randomly generated number between 1 and 20 while trying to achieve the highest possible score.
 
+## Live Demo
+
+https://catalinalexandra.github.io/GuessMyNumber/
+
 ## Features
 
 - Random number generation;
@@ -35,3 +39,6 @@ The player has to guess a randomly generated number between 1 and 20 while tryin
 - Variables and state management
 - Random number generation
 - Updating the UI dynamically
+
+##ScreenShot
+![Guess My Number Screenshot](assets/SnapshotGuessMyNumber.png)
